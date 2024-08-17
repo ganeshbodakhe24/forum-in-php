@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forem</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/../css/bootstrap.min.css">
+    
+    <!-- style -->
+    <style type="text/style" src="../js/bootstrap.bundle.js"></style>
+    <style type="text/style" src="../js/bootstrap.bundle.min.js"></style>
+    <style type="text/style" src="../js/bootstrap.js"></style>
+    <style type="text/style" src="../js/bootstrap.min.js"></style>
+
+</head>
+<body>
+
+<?php
+     $sql='SELECT * FROM `categories`';
+     $result=mysqli_query($conn,$sql);
+     $num=mysqli_num_rows($result);
+     if($num>0){
+      while($row=mysqli_fetch_array($result)){
+        
+        echo '';
+      }
+     }
+     else{
+      echo "<h1 text-center> No Data Found</h1>";
+     }
+?>

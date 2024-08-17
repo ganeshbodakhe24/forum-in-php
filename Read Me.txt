@@ -1,0 +1,2 @@
+Database name should be( idiscuss )
+css comming from css folder which is bootstrap css hance this folder in it's proper position 
